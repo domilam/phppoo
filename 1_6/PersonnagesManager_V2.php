@@ -17,9 +17,10 @@
         public function add(Personnage_V2 $perso){
             /*cette méthode ajoutera un personnage dans la base*/
             /*préparer la requête paramétrée*/
-            $query=$this->_db->prepare('INSERT INTO personnages_v2 (nom) VALUES (:nom)');
+            $query=$this->_db->prepare('INSERT INTO personnages_v2 (nom, type) VALUES (:nom, :type)');
             /*assigner la valeur au paramètre*/
             $query->bindValue(':nom',$perso->nom());
+            $query->bindValue(':type',$perso->type());
             /*exécuter la requête*/
             $query->execute();
 
@@ -90,7 +91,7 @@
             $query->execute();            // Le résultat sera un tableau d'instances de Personnage.
             while ($donnees = $query->fetch(PDO::FETCH_ASSOC))
             {
-                $persos[] = new Personnage_V2($donnees);
+                ($donnees['type']=='Magicien')? $persos[] = new Magicien($donnees): $persos[] = new Guerrier($donnees);
             }
 
             return $persos;

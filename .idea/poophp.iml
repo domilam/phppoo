@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/symfony/symfony" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/symfony/monolog-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/gedmo/doctrine-extensions" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/doctrine-fixtures-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/coresphere/console-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/sensio/distribution-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/symfony/assetic-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/symfony/swiftmailer-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/jdorn/sql-formatter" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/incenteev/composer-parameter-handler" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/sensio/framework-extra-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/stof/doctrine-extensions-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/doctrine-cache-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/friendsofsymfony/user-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/sensiolabs/security-checker" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/doctrine-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/twig/extensions" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/annotations" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/data-fixtures" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/collections" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/twig/twig" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/cache" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/dbal" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/behat/transliterator" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/sensio/generator-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/kriswallsmith/assetic" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/symfony/symfony" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/symfony/monolog-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/gedmo/doctrine-extensions" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/doctrine-fixtures-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/coresphere/console-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/sensio/distribution-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/symfony/assetic-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/symfony/swiftmailer-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/jdorn/sql-formatter" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/incenteev/composer-parameter-handler" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/sensio/framework-extra-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/stof/doctrine-extensions-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/doctrine-cache-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/friendsofsymfony/user-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/sensiolabs/security-checker" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/doctrine-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/twig/extensions" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/annotations" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/data-fixtures" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/collections" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/twig/twig" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/cache" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/dbal" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/behat/transliterator" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/sensio/generator-bundle" />
+          <root url="file://$MODULE_DIR$/../symfony/my_project/vendor/kriswallsmith/assetic" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/../symfony/my_project/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/../symfony/my_project/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

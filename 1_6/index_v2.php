@@ -34,9 +34,11 @@ catch(exception $e){
 /*on créè un personnage Manager*/
 $manager=new PersonnagesManager_V2($db);
 
-if (isset($_POST['creer']) && isset($_POST['nom'])) // Si on a voulu créer un personnage.
+if (isset($_POST['creer']) && isset($_POST['nom']) && isset($_POST['type'])) // Si on a voulu créer un personnage.
 {
-    $perso = new Personnage_V2(['nom' => $_POST['nom']]); // On crée un nouveau personnage.
+    if ($_POST['type']=='Magicien'){
+        $perso = new Magicien(['nom' => $_POST['nom']]); // On crée un nouveau magicien.
+    }else $perso = new Guerrier(['nom' => $_POST['nom']]); // On crée un nouveau guerrier.
 
     if (!$perso->nomValide())
     {
@@ -136,8 +138,16 @@ elseif (isset($_GET['frapper'])) // Si on a cliqué sur un personnage pour le fr
         <fieldset>
             <legend>Mes informations</legend>
             <p>
+                Type : <?= $perso->type() ?><br/>
                 Nom : <?= htmlspecialchars($perso->nom()) ?><br />
-                Dégâts : <?= $perso->degats() ?>
+                Dégâts : <?= $perso->degats() ?><br/>
+                <?php
+                    if ($perso->type()=='Magicien'){?>
+                        Magie :
+                    <?php }else{?>
+                        Protection :
+                    <?= $perso->atout() ?><br>
+                    <?php } ?>
             </p>
         </fieldset>
 
@@ -155,7 +165,7 @@ elseif (isset($_GET['frapper'])) // Si on a cliqué sur un personnage pour le fr
                 else
                 {
                     foreach ($persos as $unPerso)
-                        echo '<a href="?frapper=', $unPerso->id(), '">', htmlspecialchars($unPerso->nom()), '</a> (dégâts : ', $unPerso->degats(), ')<br />';
+                        echo '<a href="?frapper=', $unPerso->id(), '">', htmlspecialchars($unPerso->nom()), '</a> (dégâts : ', $unPerso->degats() , '|type : ' , $unPerso->type(),')<br />';
                 }
 
                 ?>
@@ -169,10 +179,16 @@ elseif (isset($_GET['frapper'])) // Si on a cliqué sur un personnage pour le fr
         <form method="post" action>
             <p>
                 <label for="nom">Tapez le nom du personnage : </label><input type="text" name="nom" id="nom">
-                <input type="submit" value="Créer le personnage" name="creer">
                 <input type="submit" value="Utiliser le personnage" name="utiliser">
             </p>
-
+            <p>
+                <label for="type">Type : </label>
+                <select name="type" id="type">
+                    <option value="Magicien">Magicien</option>
+                    <option value="Guerrier">Guerrier</option>
+                </select>
+                <input type="submit" value="Créer le personnage" name="creer">
+            </p>
 
         </form>
     <?php
