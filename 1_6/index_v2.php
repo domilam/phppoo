@@ -11,7 +11,7 @@ session_start(); // On appelle session_start() APRÈS avoir enregistré l'autolo
 if (isset($_GET['deconnexion'])) /*on détruit la session si déconnexion*/
 {
     session_destroy();
-    header('Location: .');
+    header('Location: index_v2.php');
     exit();
 }
 

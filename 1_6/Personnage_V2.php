@@ -1,11 +1,9 @@
 <?php
-    class Personnage{
+    class Personnage_V2{
         private $_id;
         private $_nom;
         private $_degats;
         private $_experience; // L'expérience du personnage.
-        private $_atout;
-        private $_type;
 
         const CEST_MOI=1;
         const FRAPPE=2;
@@ -16,7 +14,7 @@
             $this->_experience = $this->_experience + 1;
         }
 
-        public function frapper(Personnage $perso){
+        public function frapper(Personnage_V2 $perso){
             /*on vérifie qu'on ne se frappe pas soit même, sinon on renverra une valeur indiquant qu'on se frappe*/
             if ($this->_id==$perso->id()){
                 return self::CEST_MOI;
